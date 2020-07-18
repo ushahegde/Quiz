@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/colorfulbackground"
+              android:layout_height="match_parent">
+<!--
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:inputType="none|text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        style="@style/Base.Widget.AppCompat.SearchView"
+         />-->
+    <ListView
+              android:id="@android:id/list"
+              android:name="com.hegdeapps.dsqns.ObjQnListFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:dividerHeight="1dp"
+              android:divider="@drawable/divider"
+              android:layout_weight="1"
+              android:padding="7dp"    />
+
+<TextView
+android:id="@android:id/empty"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:text="No favorite  questions"/>
+</LinearLayout>

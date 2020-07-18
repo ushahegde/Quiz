@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/colorfulbackground"
+              android:layout_height="match_parent">
+
+
+      <!--  <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            style="@style/Base.Widget.AppCompat.SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none|text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:queryHint="Search..."
+            />-->
+
+    <ListView
+        android:id="@android:id/list"
+        android:dividerHeight="1dp"
+        android:divider="@drawable/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No favorite  questions"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+<!--TODO change icon-->
+
+    <item
+        android:id="@+id/action_showstat"
+        android:orderInCategory="100"
+        app:showAsAction="never|withText"
+        android:title="@string/action_showstat" />
+    <item
+        android:id="@+id/action_rateapp"
+        android:orderInCategory="100"
+        app:showAsAction="never|withText"
+        android:title="Rate the app" />
+
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="100"
+        app:showAsAction="never|withText"
+        android:title="@string/send_feedback" />
+</menu>

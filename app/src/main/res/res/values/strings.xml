@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Java Quizard</string>
+    <string name="INTRO_TEXT">This quiz consists of 10 objective questions on C language.\n Each correct answer gives you 1000 points.\n There are no negative markings\n </string>
+    <string name="quiz">Quiz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_dsmain">C Quizard</string>
+    <string name="coding">PROGRAMS</string>
+    <string name="mcq">OBJECTIVE</string>
+    <string name="select_topic">Select topic</string>
+    <string name="action_showstat">Show stats</string>
+    <string name="nav_coding">Coding</string>
+    <string name="nav_multiple">Objective</string>
+    <string name="send_feedback">Your feedback/comments</string>
+    <string name="copy">COPY</string>
+    <string name="close">CLOSE</string>
+    <string name="taketest">QUIZ</string>
+    <string name="test_description">The quiz consists of 25 random questions on different topics. There is no time limit.</string>
+    <string name="all">All</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="tough">Tough</string>
+    <string name="action_settings_qns">Difficulty</string>
+    <string name="share">Share</string>
+</resources>

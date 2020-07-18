@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/cyan700</color>
+    <color name="white">#ffffff</color>
+    <color name="cyan700">#0097a7</color>
+    <color name="gray">#fff3f3</color>
+    <color name="buttonpressedcolor">#81b0f5</color>
+    <color name="primary_darkblue">#1a3b5c</color>
+    <color name="primary_dark_darkblue">#081135</color>
+    <color name="dialog">#00566b</color>
+    <color name="lightpink">#ffe5ef</color>
+    <color name="blacker">#111</color>
+    <color name="lightblack">#5A5A5A</color>
+    <color name="verydarkblue">#00003C</color>
+    <color name="blue900">#01579B</color>
+</resources>

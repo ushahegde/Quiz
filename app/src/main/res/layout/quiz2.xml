@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="@drawable/colorfulbackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--    <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit_id"
+            android:text="Adview"/>-->
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="4dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:theme="?attr/actionBarTheme">
+       <!-- <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.ActionBar.TabText"
+            android:text=" "/>-->
+
+        <TextView
+            android:id="@+id/qnnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            style="@style/Widget.AppCompat.ActionBar.TabText"
+            android:text=" "/>
+        <!--  <Button
+              android:id="@+id/share"
+              style="@android:style/Widget.ActionButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@android:drawable/ic_menu_share"
+              android:elevation="2dp"
+              android:textColor="@color/white"/>-->
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/nextbutton"
+        android:clickable="false"
+        android:id="@+id/scrollView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAllCaps="true"
+                android:text=" "/>-->
+
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:text="Question"
+                android:textColor="@color/white"
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/questioncode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="Question"
+                android:textColor="@color/white"
+                android:typeface="monospace"/>
+
+
+            <Button
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/answerbg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+
+                android:background="@drawable/answerbg"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="@drawable/answerbg"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/answerbg"
+                android:elevation="1dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextbutton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/buttonsel"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"/>
+</RelativeLayout>
